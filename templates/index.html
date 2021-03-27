@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handwritten Digit Recognizer</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.4.0/fabric.min.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Handwritten Digit Recognizer</h1>
+            <canvas id="sheet" width="140" height="140"></canvas>
+            <p>Draw a number from 0 to 9 above then press "Predict" button below for magic!</p>
+            <input class="button" type="button" value="Predict" onclick="predict()">
+        </div>
+    </body>
+</html>
